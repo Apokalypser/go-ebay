@@ -4,15 +4,15 @@ import "encoding/xml"
 
 type ReviseFixedPriceItem struct {
 	ItemID                string
-	StartPrice            string `xml:",omitempty"`
-	ConditionID           uint   `xml:",omitempty"`
-	Quantity              uint
-	Title                 string           `xml:",omitempty"`
-	Description           string           `xml:",omitempty"`
-	PayPalEmailAddress    string           `xml:",omitempty"`
-	PictureDetails        *PictureDetails  `xml:",omitempty"`
-	ShippingDetails       *ShippingDetails `xml:",omitempty"`
-	PrimaryCategory       *PrimaryCategory
+	StartPrice            string                 `xml:",omitempty"`
+	ConditionID           uint                   `xml:",omitempty"`
+	Quantity              uint                   `xml:",omitempty"`
+	Title                 string                 `xml:",omitempty"`
+	Description           string                 `xml:",omitempty"`
+	PayPalEmailAddress    string                 `xml:",omitempty"`
+	PictureDetails        *PictureDetails        `xml:",omitempty"`
+	ShippingDetails       *ShippingDetails       `xml:",omitempty"`
+	PrimaryCategory       *PrimaryCategory       `xml:",omitempty"`
 	ReturnPolicy          *ReturnPolicy          `xml:",omitempty"`
 	ProductListingDetails *ProductListingDetails `xml:",omitempty"`
 	ItemSpecifics         []ItemSpecifics        `xml:",omitempty"`

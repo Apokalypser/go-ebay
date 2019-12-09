@@ -5,6 +5,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"net/url"
 	"strconv"
@@ -46,6 +47,7 @@ func (e EbayConf) RunCommand(c Command) (EbayResponse, error) {
 	}
 
 	if e.Logger != nil {
+		log.Println(body.String())
 		e.Logger(body.String())
 	}
 
