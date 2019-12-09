@@ -3,6 +3,7 @@ package ebay
 import "encoding/xml"
 
 type AddItem struct {
+	AutoPay               bool
 	Currency              string
 	Country               string
 	DispatchTimeMax       int    `xml:",omitempty"`
