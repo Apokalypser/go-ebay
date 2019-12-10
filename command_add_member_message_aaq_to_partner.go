@@ -30,7 +30,7 @@ func (c AddMemberMessageAAQToPartner) ParseResponse(r []byte) (EbayResponse, err
 }
 
 func (c AddMemberMessageAAQToPartner) Body() interface{} {
-	return []interface{}{c.ItemID, c.MemberMessage, c.Subject}
+	return []interface{}{c.ItemID, c.MemberMessage}
 }
 
 type AddMemberMessageAAQToPartnerResponse struct {
