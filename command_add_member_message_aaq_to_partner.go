@@ -10,20 +10,12 @@ type MemberMessage struct {
 	Body         string
 	QuestionType string
 	RecipientID  string
-}
-
-type RecipientID struct {
-	RecipientID string `xml:",innerxml"`
-}
-
-type Subject struct {
-	Subject string `xml:",innerxml"`
+	Subject      string
 }
 
 type AddMemberMessageAAQToPartner struct {
 	ItemID        *ItemID
 	MemberMessage *MemberMessage
-	Subject       *Subject
 }
 
 func (c AddMemberMessageAAQToPartner) CallName() string {
